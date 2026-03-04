@@ -12,9 +12,10 @@ description: >-
   VLSI and power electronics to the architecture of EV powertrains and embedded software. 
   We look past the silos to understand how complex, "arbitrary" components converge into 
   unified, high-performance systems.
+avatar: /assets/img/logo.png
 
 url: "https://arbitdesigns.github.io"
-baseurl: "/blog"
+baseurl: ""
 
 github:
   username: arbitdesigns
@@ -24,6 +25,7 @@ social:
   email: msaurabh@yahoo.com
   links:
     - https://github.com/arbitdesigns
+    - https://www.linkedin.com/in/saurabhhere/
 
 # Prefer color scheme setting
 theme_mode: dark

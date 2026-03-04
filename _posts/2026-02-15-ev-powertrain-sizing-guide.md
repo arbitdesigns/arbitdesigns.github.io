@@ -26,7 +26,7 @@ Through this guide, I have tried to capture not just the calculations but the re
 
 **A note on scope:** This is an approximation-based calculation guide — useful for quick first-pass estimations, especially when you are in the early stages of a project and many vehicle parameters are still unknown or uncertain. The approach uses simplified models (constant efficiency, duration-based thermal ratings, independent worst-case sizing) that get you to a defensible motor specification without needing detailed motor data. As your project matures and you have access to real motor parameters (winding resistance, inductance, flux linkage), measured performance curves (efficiency maps, thermal limit envelopes), and target drive cycles (IDC, MIDC, WLTP), you would want to move to more advanced modelling techniques that we will cover in separate articles.
 
-The guide uses a small 3-seater Indian city EV as a worked example. Every formula is applied to real numbers from a companion **[Excel spreadsheet](/blog/assets/motor_sizing_calculations_simplified.xlsx)** that you can download and modify for your own vehicle.
+The guide uses a small 3-seater Indian city EV as a worked example. Every formula is applied to real numbers from a companion **[Excel spreadsheet](/assets/motor_sizing_calculations_simplified.xlsx)** that you can download and modify for your own vehicle.
 
 ### What this guide covers
 
@@ -222,7 +222,7 @@ The key insight: at low speeds, you have enormous surplus force (fast accelerati
 
 ## Part 3: The Actual Calculations
 
-We created an **[Excel spreadsheet](/blog/assets/motor_sizing_calculations_simplified.xlsx)** that performs all of the calculations described below with live formulas. Every input — vehicle weight, grade angle, acceleration target — flows through linked cells, so changing one value updates every result automatically. The template has six sheets: Vehicle Specs (all inputs), Gradeability Power (hill-climbing torque and power), Acceleration Power (0→70 km/h force and energy), Powertrain Summary (motor/controller/gearbox/battery SOR), Accel Verification (reverse-checks achievable acceleration times using rated motor specs), and Grade Verification (confirms the rated motor can handle the design grade, with a grade-by-grade capability table). A Remarks column on every sheet explains what each field means and why it matters.
+We created an **[Excel spreadsheet](/assets/motor_sizing_calculations_simplified.xlsx)** that performs all of the calculations described below with live formulas. Every input — vehicle weight, grade angle, acceleration target — flows through linked cells, so changing one value updates every result automatically. The template has six sheets: Vehicle Specs (all inputs), Gradeability Power (hill-climbing torque and power), Acceleration Power (0→70 km/h force and energy), Powertrain Summary (motor/controller/gearbox/battery SOR), Accel Verification (reverse-checks achievable acceleration times using rated motor specs), and Grade Verification (confirms the rated motor can handle the design grade, with a grade-by-grade capability table). A Remarks column on every sheet explains what each field means and why it matters.
 
 Below is a summary of the steps and the reasoning behind them. Follow along with the spreadsheet open to see the numbers come alive.
 
@@ -1052,4 +1052,4 @@ Where: k_duty = duty cycle derating factor (typically 0.6–0.8; we use 0.7).
 
 ---
 
-*Download the  **[Excel spreadsheet](/blog/assets/motor_sizing_calculations_simplified.xlsx)** to run these calculations for your own vehicle. Change any input and every result updates automatically.*
+*Download the  **[Excel spreadsheet](/assets/motor_sizing_calculations_simplified.xlsx)** to run these calculations for your own vehicle. Change any input and every result updates automatically.*
